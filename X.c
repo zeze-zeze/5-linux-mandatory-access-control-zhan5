@@ -4,8 +4,7 @@
 
 void main()
 {
-    system("/usr/bin/wget https://github.com/zeze-zeze/5-linux-mandatory-access-control-zhan5/blob/master/Y.c?raw=true -O /var/X/Y.c");
-    //system("/usr/bin/curl https://github.com/zeze-zeze/5-linux-mandatory-access-control-zhan5/blob/master/Y.c?raw=true --output /var/X/Y.c");
+    system("/usr/bin/wget https://raw.githubusercontent.com/zeze-zeze/5-linux-mandatory-access-control-zhan5/master/Y.c -O /var/X/Y.c");
     system("cd /var/X/");
     system("/usr/bin/gcc /var/X/Y.c -o /var/Y/Y");
     system("/bin/chmod +x /var/Y/Y");

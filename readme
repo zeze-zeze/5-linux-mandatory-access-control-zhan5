@@ -1,0 +1,6 @@
+# proj5
+# 為了防止想法與 spec 有出入，寫了一篇 readme 做參考
+
+* OS: ubuntu 18.04
+* Program X: 做 syscall 將 github 上的 Y.c wget 至 /var/X/Y.c 後，用 gcc 編譯至 /var/Y/Y ，再 chmod +x /var/Y/Y 
+* Program Y: printf("Program Y")
