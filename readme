@@ -1,6 +1,28 @@
 # proj5
-# 為了防止想法與 spec 有出入，寫了一篇 readme 做參考
+* url : https://github.com/zeze-zeze/5-linux-mandatory-access-control-zhan5
+* 為了防止想法與 spec 有出入，寫了一篇 readme 做參考
 
+## Environment
+* proj5_path : /home/zhan/5-linux/mandtort-access-control-zhan5 
+* profile_path : /etc/apparmor.d/usr.bin.X
 * OS: ubuntu 18.04
-* Program X: 做 syscall 將 github 上的 Y.c wget 至 /var/X/Y.c 後，用 gcc 編譯至 /var/Y/Y ，再 chmod +x /var/Y/Y 
-* Program Y: printf("Program Y")
+
+## Inplement
+* Program X: 做 system 將 github 上的 Y.c wget 至 /var/X/Y.c 後，用 gcc 編譯至 /var/Y/Y ，再 chmod +x /var/Y/Y
+* Program Y: printf("Program Y") 
+
+
+## instruction
+    1. ssh userX@140.113.167.185 -p 6668
+       password:userX
+
+    2. cd /usr/local/bin/px
+    
+    3. ./X
+
+## expected
+    會成功 download 至 /var/X/Y.c 
+
+    輸出 Program X done
+         Program Y
+         fork /var/Y/Y
